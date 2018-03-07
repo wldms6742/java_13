@@ -45,7 +45,7 @@ public class MemberController {
 				}else {
 					memberView.view("삭제 실패");
 				}
-				
+			
 			}else {
 				System.out.println("Finish");
 				break;
