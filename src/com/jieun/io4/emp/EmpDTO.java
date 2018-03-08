@@ -4,19 +4,24 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class EmpDTO {
-private int empNumber;
+private String empNum;
 private String id;
-private String depart;
-private String position;
-private int salary;
-private int insentive;
-private Date date;
-
-public int getEmpNumber() {
-	return empNumber;
+private int age;
+public int getAge() {
+	return age;
 }
-public void setEmpNumber(int empNumber) {
-	this.empNumber = empNumber;
+public void setAge(int age) {
+	this.age = age;
+}
+private String dept;
+private String lev;
+private int salary;
+private int insen;
+public String getEmpNum() {
+	return empNum;
+}
+public void setEmpNum(String empNum) {
+	this.empNum = empNum;
 }
 public String getId() {
 	return id;
@@ -24,17 +29,18 @@ public String getId() {
 public void setId(String id) {
 	this.id = id;
 }
-public String getDepart() {
-	return depart;
+
+public String getDept() {
+	return dept;
 }
-public void setDepart(String depart) {
-	this.depart = depart;
+public void setDept(String dept) {
+	this.dept = dept;
 }
-public String getPosition() {
-	return position;
+public String getLev() {
+	return lev;
 }
-public void setPosition(String position) {
-	this.position = position;
+public void setLev(String lev) {
+	this.lev = lev;
 }
 public int getSalary() {
 	return salary;
@@ -42,17 +48,11 @@ public int getSalary() {
 public void setSalary(int salary) {
 	this.salary = salary;
 }
-public int getInsentive() {
-	return insentive;
+public int getInsen() {
+	return insen;
 }
-public void setInsentive(int insentive) {
-	this.insentive = insentive;
-}
-public Date getDate() {
-	return date;
-}
-public void setDate(Date date) {
-	this.date = date;
+public void setInsen(int insen) {
+	this.insen = insen;
 }
 
 

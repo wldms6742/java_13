@@ -6,17 +6,24 @@ import com.iu.io4.member.MemberDTO;
 import com.jieun.io4.emp.EmpDTO;
 
 public class EmpView {
-	public void view(ArrayList<EmpDTO> ar) {
-		for(EmpDTO emp : ar) {
-
-			System.out.println("=======================");
-			System.out.println("사원ID:"+emp.getId());
-			System.out.println("사원직책:"+emp.getPosition());
-			System.out.println("사원부서:"+emp.getDepart());
-			System.out.println("사원연봉:"+emp.getSalary());
-			System.out.println("사원번호:"+emp.getEmpNumber());
-			System.out.println("인센티브:"+emp.getInsentive());
-			System.out.println("입사일:"+emp.getDate());
+	public void view(String s) {
+		System.out.println(s);
+	}
+	
+	public void view(ArrayList<EmpDTO> empDTOs) {
+		for(EmpDTO empDTO: empDTOs) {
+			this.view(empDTO);
 		}
+	}
+	
+	public void view(EmpDTO empDTO) {
+		System.out.println("EmpNum : "+empDTO.getEmpNum());
+		System.out.println("ID : "+empDTO.getId());
+		System.out.println("Age : "+empDTO.getAge());
+		System.out.println("Dept : "+empDTO.getDept());
+		System.out.println("Lev : "+empDTO.getLev());
+		System.out.println("Sal : "+empDTO.getSalary());
+		System.out.println("Insen : "+empDTO.getInsen());
+		
 	}
 }
